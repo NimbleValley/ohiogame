@@ -1,0 +1,28 @@
+<svg width="20vw" height="297mm" viewBox="0 0 400 297" version="1.1" id="svg5" xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+        <defs id="defs2" />
+        <g id="monster-flag">
+            <path
+                style="fill:#c1133d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+                d="M 309.15782,0.75590885 274.64925,297.1902 254.28353,272.86449 286.52925,0.19019485 Z"
+                id="leg-right" />
+            <path
+                style="fill:#c1133d;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-dasharray:none"
+                d="M 204.78857,241.56 V 148.78286 H 225.72 v 92.21142 l -11.88,-11.88 z" id="leg-middle-flag" />
+            <path
+                style="fill:#c1133d;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-dasharray:none"
+                d="M 123.89143,0.56571427 158.4,297 178.76571,272.67429 146.52,0 Z" id="leg-left-flag" />
+            <path
+                style="fill:#003bbf;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 124.45714,1.2857143e-7 215.53714,180.46285 308.87998,-0.56571386 Z" id="body-flag" />
+            <circle
+                style="fill:#c1133d;fill-opacity:1;stroke:#f7f7f7;stroke-width:5.66499;stroke-linecap:square;stroke-linejoin:round;paint-order:stroke markers fill"
+                id="circle-red-flag" cx="217.23428" cy="59.399998" r="28.851429" />
+            <ellipse
+                style="fill:#000000;fill-opacity:1;stroke:#f7f7f7;stroke-width:5.66499;stroke-linecap:square;stroke-linejoin:round;paint-order:stroke markers fill"
+                id="eye-flag" cx="217.23428" cy="66.162918" rx="14.70857" ry="7.3542852" />
+            <path
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 200.26286,42.994285 c 0,0 17.53714,11.880001 31.67999,0" id="eyebrow-flag" />
+        </g>
+    </svg>

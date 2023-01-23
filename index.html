@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohio :{</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Rubik+Maze&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="curtain"></div>
+    <div class="curtain"></div>
+    <div class="curtain"></div>
+    <div class="curtain"></div>
+    <div class="curtain"></div>
+
+    <h1 id="title">Ohio - The Game</h1>
+    <div class="button-type-2" onclick="playGame()">Play Game</div>
+    <div class="button-type-2">Credits</div>
+
+    <svg width="20vw" height="100vh" style="top: 35vh; left: 0;" viewBox="0 0 400 800" version="1.1" id="flag-monster"
+        xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+        <defs id="defs2" />
+        <g id="monster-flag">
+            <path
+                style="fill:#c1133d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+                d="M 309.15782,0.75590885 274.64925,297.1902 254.28353,272.86449 286.52925,0.19019485 Z"
+                id="leg-right" />
+            <path
+                style="fill:#c1133d;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-dasharray:none"
+                d="M 204.78857,241.56 V 148.78286 H 225.72 v 92.21142 l -11.88,-11.88 z" id="leg-middle-flag" />
+            <path
+                style="fill:#c1133d;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-dasharray:none"
+                d="M 123.89143,0.56571427 158.4,297 178.76571,272.67429 146.52,0 Z" id="leg-left-flag" />
+            <path
+                style="fill:#003bbf;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 124.45714,1.2857143e-7 215.53714,180.46285 308.87998,-0.56571386 Z" id="body-flag" />
+            <circle
+                style="fill:#c1133d;fill-opacity:1;stroke:#f7f7f7;stroke-width:5.66499;stroke-linecap:square;stroke-linejoin:round;paint-order:stroke markers fill"
+                id="circle-red-flag" cx="217.23428" cy="59.399998" r="28.851429" />
+            <ellipse
+                style="fill:#000000;fill-opacity:1;stroke:#f7f7f7;stroke-width:5.66499;stroke-linecap:square;stroke-linejoin:round;paint-order:stroke markers fill"
+                id="eye-flag" cx="217.23428" cy="66.162918" rx="14.70857" ry="7.3542852" />
+            <path
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 200.26286,42.994285 c 0,0 17.53714,11.880001 31.67999,0" id="eyebrow-flag" />
+        </g>
+    </svg>
+
+    <svg width="20vw" height="100vh" style="top: 35vh; right: 0" viewBox="0 0 400 800" version="1.1" id="flag-monster"
+        xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+        <defs id="defs2" />
+        <g id="monster-flag">
+            <path
+                style="fill:#c1133d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+                d="M 309.15782,0.75590885 274.64925,297.1902 254.28353,272.86449 286.52925,0.19019485 Z"
+                id="leg-right" />
+            <path
+                style="fill:#c1133d;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-dasharray:none"
+                d="M 204.78857,241.56 V 148.78286 H 225.72 v 92.21142 l -11.88,-11.88 z" id="leg-middle-flag" />
+            <path
+                style="fill:#c1133d;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-dasharray:none"
+                d="M 123.89143,0.56571427 158.4,297 178.76571,272.67429 146.52,0 Z" id="leg-left-flag" />
+            <path
+                style="fill:#003bbf;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 124.45714,1.2857143e-7 215.53714,180.46285 308.87998,-0.56571386 Z" id="body-flag" />
+            <circle
+                style="fill:#c1133d;fill-opacity:1;stroke:#f7f7f7;stroke-width:5.66499;stroke-linecap:square;stroke-linejoin:round;paint-order:stroke markers fill"
+                id="circle-red-flag" cx="217.23428" cy="59.399998" r="28.851429" />
+            <ellipse
+                style="fill:#000000;fill-opacity:1;stroke:#f7f7f7;stroke-width:5.66499;stroke-linecap:square;stroke-linejoin:round;paint-order:stroke markers fill"
+                id="eye-flag" cx="217.23428" cy="66.162918" rx="14.70857" ry="7.3542852" />
+            <path
+                style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 200.26286,42.994285 c 0,0 17.53714,11.880001 31.67999,0" id="eyebrow-flag" />
+        </g>
+    </svg>
+
+    <div id="audio-popup">
+        <h2>Would you like music?</h2>
+        <div class="button-type-1" onclick="startMusic()">Yes</div>
+        <div class="button-type-1" onclick="startMusic()">Also Yes</div>
+    </div>
+
+    <div id="menu-tab-select-game">
+        <h2>Destination:</h2>
+        <div id="flex-container-vertical">
+            <div class="button-type-3"> Load Game </div>
+            <div class="button-type-3" onclick="newGame()"> New Game </div>
+        </div>
+    </div>
+
+    <div id="slideshow">
+        <div id="left-click" onclick="previousSlide()"></div>
+        <div id="right-click" onclick="nextSlide()"></div>
+        <div class="slide">
+            <h3>Once, there was a fair & noble realm by the name of Ohio.</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">- Click on left side to go back, right to advance -</p>
+        </div>
+        <div class="slide">
+            <h3>All was well, until the great realm began to crumble.</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">- Click on left side to go back, right to advance -</p>
+        </div>
+        <div class="slide">
+            <h3>An evil force swept through, reducing everyone to Ohioans.</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">- Click on left side to go back, right to advance -</p>
+        </div>
+        <div class="slide">
+            <h3>These corrupt people took over the realm's government.</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">- Click on left side to go back, right to advance -</p>
+        </div>
+        <div class="slide">
+            <h3>Slowly, the people of this new cursed nation began to mutate...</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">- Click on left side to go back, right to advance -</p>
+        </div>
+        <div class="slide">
+            <h3>Some grew thin & tall, while others developed abnormal powers.</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">- Click on left side to go back, right to advance -</p>
+        </div>
+        <div class="slide">
+            <h3>Today, the land is dangerous and a threat to neighboring civilizations.</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">- Click on left side to go back, right to advance -</p>
+        </div>
+        <div class="slide">
+            <h3>We need to save Ohio, or we fear it will take over the world.</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">- Click on left side to go back, right to advance -</p>
+        </div>
+        <div class="slide">
+            <h3>Brave warrior, we have chosen you to free Ohio from these evil grasps. You won't be alone, however...</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">- Click on left side to go back, right to advance -</p>
+        </div>
+        <div class="slide">
+            <h3>We will gave you this state of the art AI helper, named Glubo. It will guide you through the cruel land.</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">- Click on left side to go back, right to advance -</p>
+        </div>
+        <div class="slide">
+            <h3>You will enter this land through the north, in Cleveland. Make your way south, freeing all evil cities.</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">- Click on left side to go back, right to advance -</p>
+        </div>
+        <div class="slide">
+            <h3>Along the way, I suspect you will be aided by the innocent citizens who were cursed into other forms.</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">- Click on left side to go back, right to advance -</p>
+        </div>
+        <div class="slide">
+            <h3>Now, go off with haste, as time is running low!</h3>
+            <img class="slide-image" src="img/Slide1.svg">
+            <p style="bottom: 1vh; position: absolute;">Click left to begin game</p>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="slideshow.js"></script>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,299 @@
+html,
+body {
+    margin: 0;
+    user-select: none;
+    overflow: hidden;
+    height: 100vh;
+
+    background: rgb(100, 131, 168);
+    background: linear-gradient(32deg, rgba(100, 131, 168, 1) 0%, rgba(125, 188, 232, 1) 100%);
+
+}
+
+:root {
+    --flag-scale: 1;
+}
+
+h1 {
+    display: block;
+    position: relative;
+    font-family: 'Rubik Maze', cursive;
+    font-size: 10vw;
+    font-weight: lighter;
+    text-shadow: 0px 0px 1vw black;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    z-index: 10;
+    background-color: rgb(189, 189, 189);
+    padding: 0 2vw 0 2vw;
+    border-radius: 1vw;
+    scale: 1;
+    transition: background-color 0.25s;
+}
+
+h1:hover {
+    background-color: wheat;
+}
+
+h2 {
+    position: relative;
+    font-family: 'Moo Lah Lah', cursive;
+    font-size: 7.5vw;
+    font-weight: lighter;
+    text-shadow: 0px 0px 1vw black;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    color: rgb(216, 209, 209);
+    margin: 0;
+}
+
+h3 {
+    font-size: 8vh;
+    text-align: center;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(56, 55, 55);
+    color: rgb(219, 218, 218);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 0 2vw 0 2vw;
+    border-radius: 1vw;
+    transition: background-color 0.5s;
+}
+
+h3:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+p {
+    font-size: 2vw;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(56, 55, 55);
+    color: rgb(219, 218, 218);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 1vw;
+    transition: background-color 0.5s;
+}
+
+p:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+.button-type-1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 10vh;
+    padding: 0 2vw 0 2vw;
+    transition-duration: 0.25s;
+    border-radius: 1vw;
+}
+
+.button-type-1:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+}
+
+.button-type-2 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 8vh;
+    padding: 0 2vw 0 2vw;
+    transition-duration: 0.75s;
+    border-radius: 1vw;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.5vw solid black;
+    margin-bottom: 5vh;
+    scale: 1;
+}
+
+.button-type-2:hover {
+    cursor: pointer;
+    background-color: black;
+    scale: 1.1;
+    color: white;
+}
+
+.button-type-3 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 8vh;
+    padding: 0 2vw 0 2vw;
+    transition-duration: 0.75s;
+    border-radius: 1vw;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.5vw solid rgb(255, 255, 255);
+    color: white;
+    margin-bottom: 5vh;
+    scale: 1;
+}
+
+.button-type-3:hover {
+    cursor: pointer;
+    background-color: white;
+    scale: 1.1;
+    color: black;
+}
+
+#audio-popup {
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+    width: 60vw;
+    height: 80vh;
+    background-color: rgb(150, 150, 150);
+    border: 0.5vw solid rgb(92, 89, 89);
+    z-index: 5;
+    box-shadow: 0px 0px 20vw black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#flag-monster {
+    position: absolute;
+    top: 0;
+    height: fit-content;
+}
+
+#monster-flag {
+    animation: flagIdle 5s infinite ease-in-out;
+}
+
+@keyframes flagIdle {
+    0% {
+        transform: translate(0, 0) scale(var(--flag-scale));
+    }
+
+    50% {
+        transform: translate(0, 25%) scale(var(--flag-scale));
+    }
+
+    100% {
+        transform: translate(0, 0) scale(var(--flag-scale));
+    }
+}
+
+#eye-flag {
+    animation: eyeBlink 3.5s infinite ease-in-out;
+}
+
+@keyframes eyeBlink {
+    0% {
+        fill: black;
+    }
+
+    2% {
+        fill: rgb(255, 0, 0);
+    }
+
+    10% {
+        fill: black;
+    }
+
+    100% {
+        fill: black;
+    }
+}
+
+.curtain {
+    position: absolute;
+    width: 100vw;
+    background-color: black;
+    height: 20vh;
+    transition: 0.75s;
+    z-index: 200;   
+}
+
+#flex-container-vertical {
+    height: fit-content;
+    width: 100%;
+}
+
+/* MENU TABS HOME SCREEN*/
+
+#menu-tab-select-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: 300;
+    flex-wrap: wrap;
+}
+
+/* SLIDESHOW & STORY */
+#slideshow {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: rgb(100, 131, 168);
+    background: linear-gradient(32deg, rgba(100, 131, 168, 1) 0%, rgba(125, 188, 232, 1) 100%);
+    left: 0;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 10vw black;
+    z-index: 500;
+}
+
+.slide-image {
+    position: absolute;
+    width: 60vh;
+    top: 30vh;
+    transition: scale 0.15s;
+}
+
+.slide-image:hover {
+    scale: 1.05;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+}
+
+#left-click {
+    position: absolute;
+    width: 20vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+
+#left-click:hover {
+    cursor: pointer;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.699) 0%, rgba(0,0,0,0) 100%);
+}
+
+#right-click {
+    position: absolute;
+    width: 20vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: transparent;
+}
+
+#right-click:hover {
+    cursor: pointer;
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.699) 0%, rgba(0,0,0,0) 100%);
+}
